@@ -190,40 +190,6 @@ The main objectives of this project are:
 * To develop reusable and maintainable frontend components
 * To create a responsive and accessible user interface
 
-## 📸 Screenshots
-
-### Home Page
-
-Add your Home page screenshot here.
-
-```text
-![Home Page](./screenshots/home.png)
-```
-
-### Jobs Page
-
-Add your Jobs page screenshot here.
-
-```text
-![Jobs Page](./screenshots/jobs.png)
-```
-
-### Job Details
-
-Add your Job Details screenshot here.
-
-```text
-![Job Details](./screenshots/job-details.png)
-```
-
-### Resume Match
-
-Add your Resume Match screenshot here.
-
-```text
-![Resume Match](./screenshots/resume-match.png)
-```
-
 
 ## 🚀 Future Enhancements
 
