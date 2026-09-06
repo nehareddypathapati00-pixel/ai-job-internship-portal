@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #172033;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  height: 70px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.nav-links a:hover {
+  color: #4f46e5;
+}
+
+/* =========================
+   HOME
+========================= */
+
+.hero {
+  min-height: 520px;
+  padding: 70px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+}
+
+.hero h1 span {
+  display: block;
+  color: #4f46e5;
+}
+
+.hero p {
+  margin: 25px 0;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #667085;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4f46e5;
+  color: white;
+  padding: 12px 22px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #3730a3;
+}
+
+.hero-card {
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.match-circle {
+  width: 145px;
+  height: 145px;
+  border: 12px solid #4f46e5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.features {
+  padding: 50px 10%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.feature-icon {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #667085;
+  line-height: 1.5;
+}
+
+/* =========================
+   GENERAL PAGE
+========================= */
+
+.page {
+  padding: 50px 8%;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+}
+
+.page-title p {
+  margin-top: 8px;
+  color: #667085;
+}
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 35px;
+}
+
+.filters input,
+.filters select {
+  padding: 13px;
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  background: white;
+  font-size: 15px;
+}
+
+.filters input {
+  width: 400px;
+}
+
+/* =========================
+   JOB GRID
+========================= */
+
+.job-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+/* =========================
+   JOB CARD
+========================= */
+
+.job-card {
+  position: relative;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.2s;
+}
+
+.job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.job-card h3 {
+  margin: 15px 0 8px;
+}
+
+.job-card p {
+  margin: 7px 0;
+  color: #667085;
+}
+
+.company {
+  font-weight: bold;
+}
+
+.job-type {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 13px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 18px 0;
+}
+
+.skills span {
+  background: #f2f4f7;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
+
+/* =========================
+   NO RESULTS
+========================= */
+
+.no-results {
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.no-results p {
+  margin-top: 10px;
+  color: #667085;
+}
+
+/* =========================
+   JOB DETAILS
+========================= */
+
+.details {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 50px;
+}
+
+.details-main h1 {
+  font-size: 40px;
+  margin: 15px 0;
+}
+
+.details-main h3 {
+  margin-bottom: 15px;
+}
+
+.details-main h2 {
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+
+.description {
+  line-height: 1.7;
+  color: #667085;
+}
+
+.details-side {
+  background: #f8f9ff;
+  padding: 25px;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.details-side h3 {
+  margin-bottom: 20px;
+}
+
+.details-side p {
+  margin-top: 15px;
+  color: #667085;
+}
+
+.message {
+  margin-top: 15px;
+  color: #027a48;
+  font-weight: bold;
+}
+
+/* =========================
+   APPLICATIONS
+========================= */
+
+.application-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.application-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.application-card h3 {
+  margin: 12px 0 5px;
+}
+
+.application-card p {
+  margin: 6px 0;
+  color: #667085;
+}
+
+.status {
+  display: block;
+  background: #ecfdf3;
+  color: #027a48;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.remove-btn {
+  padding: 9px 15px;
+  border: 1px solid #d0d5dd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background: #f2f4f7;
+}
+
+/* =========================
+   AI MATCH
+========================= */
+
+.match-header {
+  margin-bottom: 30px;
+}
+
+.match-header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.match-header p {
+  color: #667085;
+}
+
+.match-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.match-box h2 {
+  margin-bottom: 8px;
+}
+
+.match-box p {
+  color: #667085;
+  margin-bottom: 20px;
+}
+
+.match-box textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 15px;
+  border: 1px solid #d0d5dd;
+  border-radius: 7px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.match-results h2 {
+  margin-bottom: 25px;
+}
+
+.match-percentage {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ecfdf3;
+  color: #027a48;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .job-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding: 50px 6%;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 30px 20px;
+  }
+
+  .details {
+    grid-template-columns: 1fr;
+    padding: 25px;
+  }
+
+  .details-main h1 {
+    font-size: 32px;
+  }
+
+  .application-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .page {
+    padding: 30px 20px;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+
+  .filters input {
+    width: 100%;
+  }
+
+  .job-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-links {
+    gap: 8px;
+    font-size: 13px;
+  }
+
+}
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  margin-top: 60px;
+  padding: 35px 8%;
+  background: #172033;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.footer h3 {
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+.footer p {
+  color: #d0d5dd;
+}
+
+.footer-copy {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+}
