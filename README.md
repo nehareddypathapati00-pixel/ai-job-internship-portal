@@ -197,7 +197,7 @@ The main objectives of this project are:
 Add your Home page screenshot here.
 
 ```text
-![Home Page](screenshots/home.png)
+![Home Page](./screenshots/home.png)
 ```
 
 ### Jobs Page
@@ -205,7 +205,7 @@ Add your Home page screenshot here.
 Add your Jobs page screenshot here.
 
 ```text
-![Jobs Page](screenshots/jobs.png)
+![Jobs Page](./screenshots/jobs.png)
 ```
 
 ### Job Details
@@ -213,7 +213,7 @@ Add your Jobs page screenshot here.
 Add your Job Details screenshot here.
 
 ```text
-![Job Details](screenshots/job-details.png)
+![Job Details](./screenshots/job-details.png)
 ```
 
 ### Resume Match
@@ -221,7 +221,7 @@ Add your Job Details screenshot here.
 Add your Resume Match screenshot here.
 
 ```text
-![Resume Match](screenshots/resume-match.png)
+![Resume Match](./screenshots/resume-match.png)
 ```
 
 
